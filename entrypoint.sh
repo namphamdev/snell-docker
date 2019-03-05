@@ -15,6 +15,14 @@ else
     exit 1
 fi
 
+if [ $OBFS == "http" ] || [ $OBFS == "tls" ]; then
+    sed -i "s/<OBFS>/$OBFS/" /app/snell-server.conf
+    
+else
+    echo "\$OBFS is use 'http' or 'tls'"
+    exit 1
+fi
+
 
 
 /app/snell-server

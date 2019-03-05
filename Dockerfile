@@ -11,4 +11,4 @@ COPY snell-server.conf /app/snell-server.conf
 COPY entrypoint.sh /app/entrypoint.sh
 
 
-ENTRYPOINT [ "sh", "entrypoint.sh" ]
+ENTRYPOINT [ "/bin/bash", "entrypoint.sh" ]

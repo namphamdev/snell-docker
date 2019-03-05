@@ -15,7 +15,7 @@ else
     exit 1
 fi
 
-if [ $OBFS == "http" ] || [ $OBFS == "tls" ]; then
+if [ "$OBFS" == "http" ] || [ "$OBFS" == "tls" ]; then
     sed -i "s/<OBFS>/$OBFS/" /app/snell-server.conf
     
 else

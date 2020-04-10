@@ -4,3 +4,5 @@
 docker run  -p <PORT>:<PORT> --name snell -e PORT=<PORT> -e PSK=<PSK> -eOBFS={http,tls} agassiyzh/snell-server
 
 ```
+
+已经支持 senll v2

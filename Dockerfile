@@ -10,5 +10,7 @@ RUN apt-get update &&\
 COPY snell-server.conf /app/snell-server.conf
 COPY entrypoint.sh /app/entrypoint.sh
 
+RUN chmod -R g+ws /app
+
 
 ENTRYPOINT [ "/bin/bash", "entrypoint.sh" ]

@@ -4,7 +4,7 @@ WORKDIR /app
 
 RUN apt-get update &&\
     apt-get install -y  unzip wget &&\
-    wget -O snell-server.zip https://github.com/surge-networks/snell/releases/download/v3.0.1/snell-server-v3.0.1-linux-amd64.zip && \
+    wget -O snell-server.zip https://dl.nssurge.com/snell/snell-server-v4.0.0-linux-amd64.zip && \
     unzip snell-server.zip 
 
 COPY snell-server.conf /app/snell-server.conf
